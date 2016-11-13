@@ -67,11 +67,14 @@
 		color: #60c659;
 	  }
 
+	  ul, ul li { list-style: none; margin-left: 0; padding-left: 0; }
+
 	  #wrap, footer {
 	  	margin: 0 auto;
 	  	width: 100%;
 	  	max-width: 720px;
 	  	padding: 0 20px 20px;
+	  	box-sizing: border-box;
 	  }
 
 	  nav, nav.mainmenu {
@@ -79,6 +82,10 @@
 	      border-bottom: 1px solid #fffaff;
 	      z-index: 2;
 	      zoom: 1;
+	      position: fixed;
+	      top: 0;
+	      left: 0;
+	      right: 0;
 	  }
 
 
@@ -109,7 +116,7 @@
 	      margin: 0;
 	      padding: 0 10px;
 	      text-align: center;
-	      vertical-align: middle !important;
+	      vertical-align: middle;
 	      text-transform: uppercase;
 	      color: #60c659;
 	      background: #212121;
@@ -128,17 +135,19 @@
 	      line-height: 48px;
 	      position: fixed;
 	      z-index: 9;
-	      top: 0;
-	      left: 0;
+	      bottom: 0;
+	      right: 0;
 	      display: block;
 	      width: 48px;
 	      height: 48px;
 	      text-align: center;
 	      color: #fffaff;
 	      background-color: #60c659;
+	      text-decoration: none;
 	  }
 
-		
+	  header { padding-top: 48px; }
+
 	  header h1 { 
 	  	font-size: 60px; 
 	  	text-align: center;
@@ -160,6 +169,8 @@
 	  	font-size: 0.4em;
 	  	font-weight: 400;
 	  }
+
+	  #skills .skills li { display: inline-block; }
 
 
 	</style>
@@ -184,7 +195,7 @@
             <div class="inner">
                 <div class="row">
                 	<div class="column-12">
-                		<amp-img src="images/darwinRunning.jpg" alt="Welcome" height="560" width="560" layout="responsive"></amp-img>
+                		<amp-img src="images/darwinRunning.jpg" alt="Welcome" height="541" width="810" layout="responsive"></amp-img>
                 	</div>
                     <div class="column-12">
                         <h1>DARWIN MATEOS <span>FRONTEND DEVELOPER</span></h1></div>
@@ -218,15 +229,15 @@
                                 <h3><span>Skills</span></h3></div>
                             <div class="box-description">
                                 <ul class="skills">
-                                    <li><amp-img src="images/icon-html.png" height="128" width="128" alt="HTML5"></li>
-                                    <li><amp-img src="images/icon-css.png" height="128" width="128" alt="CSS3"></li>
-                                    <li><amp-img src="images/icon-js.png" height="128" width="128" alt="Javascript"></li>
-                                    <li><amp-img src="images/icon-php.png" height="128" width="128" alt="PHP"></li>
-                                    <li><amp-img src="images/icon-wp.png" height="128" width="128" alt="WordPress"></li>
-                                    <li><amp-img src="images/icon-jquery.png" height="128" width="128" alt="jQuery"></li>
-                                    <li><amp-img src="images/icon-sass.png" height="128" width="128" alt="Sass"></li>
-                                    <li><amp-img src="images/icon-grunt.png" height="128" width="128" alt="Grunt"></li>
-                                    <li><amp-img src="images/icon-git.png" height="128" width="128" alt="Git"></li>
+                                    <li><amp-img src="images/icon-html.png" height="64" width="64" alt="HTML5" ></amp-img></li>
+                                    <li><amp-img src="images/icon-css.png" height="64" width="64" alt="CSS3" ></amp-img></li>
+                                    <li><amp-img src="images/icon-js.png" height="64" width="64" alt="Javascript" ></amp-img></li>
+                                    <li><amp-img src="images/icon-php.png" height="64" width="64" alt="PHP" ></amp-img></li>
+                                    <li><amp-img src="images/icon-wp.png" height="64" width="64" alt="WordPress" ></amp-img></li>
+                                    <li><amp-img src="images/icon-jquery.png" height="64" width="64" alt="jQuery" ></amp-img></li>
+                                    <li><amp-img src="images/icon-sass.png" height="64" width="64" alt="Sass" ></amp-img></li>
+                                    <li><amp-img src="images/icon-grunt.png" height="64" width="64" alt="Grunt" ></amp-img></li>
+                                    <li><amp-img src="images/icon-git.png" height="64" width="64" alt="Git" ></amp-img></li>
                                 </ul>
                             </div>
                         </article>
