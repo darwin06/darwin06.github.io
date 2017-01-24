@@ -27,5 +27,3 @@ __¡Amo el Fútbol!__
 [2]: http://search.yahoo.com/  "Yahoo Search"
 [3]: http://search.msn.com/    "MSN Search"
 
-Darwin Mateos
-
