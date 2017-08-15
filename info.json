@@ -1,6 +1,21 @@
 [
 	{
-		"title": "Lorem ipsum dolor",
+		"title": "Lorem ipsum dolor 01",
+		"description": "Lorem ipsum dolor sit amet, <i>consectetur</i> <b>adipisicing</b> elit. Dicta amet ad molestias sint ut commodi veniam voluptates, fuga recusandae quos.",
+		"image": "./images/news/lorem-ipsum-dolor.jpg"
+	},
+	{
+		"title": "Lorem ipsum dolor 02",
+		"description": "Lorem ipsum dolor sit amet, <i>consectetur</i> <b>adipisicing</b> elit. Dicta amet ad molestias sint ut commodi veniam voluptates, fuga recusandae quos.",
+		"image": "./images/news/lorem-ipsum-dolor.jpg"
+	},
+	{
+		"title": "Lorem ipsum dolor 03",
+		"description": "Lorem ipsum dolor sit amet, <i>consectetur</i> <b>adipisicing</b> elit. Dicta amet ad molestias sint ut commodi veniam voluptates, fuga recusandae quos.",
+		"image": "./images/news/lorem-ipsum-dolor.jpg"
+	},
+	{
+		"title": "Lorem ipsum dolor 04",
 		"description": "Lorem ipsum dolor sit amet, <i>consectetur</i> <b>adipisicing</b> elit. Dicta amet ad molestias sint ut commodi veniam voluptates, fuga recusandae quos.",
 		"image": "./images/news/lorem-ipsum-dolor.jpg"
 	}
