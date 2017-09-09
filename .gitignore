@@ -6,6 +6,7 @@ index - copia.html
 style.dev.css
 jquery.dev.js
 package.json
+gulpfile.js
 Gruntfile.js
 *.js.map
 
