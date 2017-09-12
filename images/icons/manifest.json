@@ -1,6 +1,9 @@
 {
- "name": "Darwin06",
  "short_name": "D06",
+ "name": "Darwin06",
+ "background_color": "#ffffff",
+ "theme_color": "#2196F3",
+ "display": "standalone",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
@@ -38,5 +41,6 @@
    "type": "image\/png",
    "density": "4.0"
   }
- ]
+ ],
+ "start_url": "index.html?launcher=true"
 }
