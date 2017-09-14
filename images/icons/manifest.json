@@ -3,7 +3,7 @@
  "name": "Darwin06",
  "background_color": "#ffffff",
  "theme_color": "#000000",
- "display": "browser",
+ "display": "standalone",
  "icons": [
   {
    "src": "/images/icons/android-icon-36x36.png",
