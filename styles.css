@@ -9686,7 +9686,9 @@ a {
   display: -ms-flexbox;
   display: flex;
   padding: 2rem;
-  transition: all .25s ease;
+  transition: -webkit-transform .25s ease, -webkit-filter .25s ease;
+  transition: transform .25s ease, filter .25s ease;
+  transition: transform .25s ease, filter .25s ease, -webkit-transform .25s ease, -webkit-filter .25s ease;
   -webkit-transform: scale(1);
   transform: scale(1);
   color: #FFF;
@@ -9698,6 +9700,16 @@ a {
   flex: 1 0;
   -webkit-filter: brightness(100%);
   filter: brightness(100%);
+  text-decoration: none;
+}
+
+.boxgrid .box:hover,
+.boxgrid .box:focus {
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  -webkit-filter: brightness(110%);
+  filter: brightness(110%);
+  z-index: 10;
 }
 
 .boxgrid .box--image,
@@ -9717,6 +9729,10 @@ a {
   background-color: #5bc0be;
 }
 
+.boxgrid .box--contact {
+  background-color: #0c152f;
+}
+
 .boxgrid .box__img {
   position: absolute;
   display: block;
@@ -9727,16 +9743,36 @@ a {
   object-position: center;
 }
 
+.brand-title {
+  line-height: 1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text--small {
+  font-size: .75rem;
+  font-weight: 300;
+}
+
 .text--large {
   font-size: 2rem;
   font-weight: 300;
+}
+
+.text--hero {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.text--hero span {
+  margin-top: 10px;
+  display: block;
 }
 
 .section {
   position: relative;
   min-height: 500px;
   min-height: calc(100vh - 4rem - 4rem);
-  margin-bottom: 250px;
+  padding-bottom: 40px;
   padding-top: 300px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -9757,15 +9793,15 @@ a {
   text-shadow: 0 0 20px #0000004d;
 }
 
-.section .section__header:after {
-  position: absolute;
-  top: 25%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
-  content: "";
+.section .section__header::after {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(5, 5, 5, 0.75) 75%);
+  bottom: 0;
+  content: '';
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 25%;
 }
 
 .home {
@@ -9774,13 +9810,13 @@ a {
 }
 
 .home img {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 .logo svg {
-  max-width: 300px;
   height: auto;
+  max-width: 300px;
 }
 
 #hero .section__header {
@@ -9789,6 +9825,7 @@ a {
 
 .footer {
   background-color: #1c2541;
+  padding: 1rem;
 }
 
 #wpadminbar {

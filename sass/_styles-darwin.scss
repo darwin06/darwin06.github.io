@@ -33,16 +33,21 @@ a {
     position: relative;
     display: flex;
     padding: 2rem;
-    transition: all .25s ease;
-    -webkit-transform: scale(1);
+    transition: transform .25s ease, filter .25s ease;
     transform: scale(1);
     color: #FFF;
     border-radius: 0.5rem;
     box-shadow: 0 19px 38px #0000004d, 0 15px 12px #0003;
     font-size: .875rem;
     flex: 1 0 0;
-    -webkit-filter: brightness(100%);
     filter: brightness(100%);
+    text-decoration: none;
+
+    &:hover, &:focus {
+      transform: scale(1.07);
+      filter: brightness(110%);
+      z-index: 10;
+    }
   }
 
   .box--image, .box--video {
@@ -52,6 +57,7 @@ a {
   .box--about {background-color: $secondary; }
   .box--portfolio {background-color: $tertiary; }
   .box--skills {background-color: $fourth; }
+  .box--contact {background-color: lighten($primary, 1%); }
 
   .box__img {
     position: absolute;
@@ -67,16 +73,37 @@ a {
 
 }
 
+.brand-title {
+  line-height: 1;
+  text-shadow: 0 2px 4px rgba($black, .5)
+}
+
+.text--small {
+  font-size: .75rem;
+  font-weight: 300;
+}
+
 .text--large {
     font-size: 2rem;
     font-weight: 300;
+}
+
+.text--hero {
+  font-size: 4rem;
+  font-weight: 600;
+
+  span {
+    margin-top: 10px;
+    display: block;
+  }
+
 }
 
 .section {
   position: relative;
   min-height: 500px;
   min-height: calc(100vh - 4rem - 4rem);
-  margin-bottom: 250px;
+  padding-bottom: 40px;
   padding-top: 300px;
   transform-style: preserve-3d;
   scroll-snap-align: start;
@@ -94,15 +121,15 @@ a {
     background-size: cover;
     text-shadow: 0 0 20px #0000004d;
 
-    &:after {
-      position: absolute;
-      top: 25%;
-      right: 0;
+    &::after {
+      background: linear-gradient(to bottom, rgba($black, 0) 0%, lighten(rgba($black, .75), 2%) 75%);
       bottom: 0;
-      left: 0;
+      content: '';
       display: block;
-      content: "";
-      background: linear-gradient(to bottom, rgba($black, 0) 0%, lighten(rgba($black, .75), 2%) 75%)
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 25%;
     }
   }
 }
@@ -116,15 +143,15 @@ a {
   }
 
   img {
-    max-width: 100%;
     height: auto;
+    max-width: 100%;
   }
 }
 
 .logo {
   svg {
-    max-width: 300px;
     height: auto;
+    max-width: 300px;
 
   }
 }
