@@ -1,13 +1,6 @@
 
 # Created by https://www.gitignore.io/api/sass,sublimetext,node,grunt
 
-production/
-index - copia.html
-style.dev.css
-jquery.dev.js
-package.json
-gulpfile.js
-Gruntfile.js
 *.js.map
 
 ### Sass ###
