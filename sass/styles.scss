@@ -1,0 +1,17 @@
+// * Bootstrap
+@import "bootstrap-vars";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// * Font Awesome
+@import "fontawesome-vars";
+@import "../node_modules/font-awesome/scss/font-awesome";
+
+// * FONTS
+@import "fonts";
+
+// * STYLES
+@import "styles-darwin";
+
+#wpadminbar {
+    display: none !important;
+}
