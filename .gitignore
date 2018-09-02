@@ -1,19 +1,9 @@
 
 # Created by https://www.gitignore.io/api/sass,sublimetext,node,grunt
 
-production/
-index - copia.html
-style.dev.css
-jquery.dev.js
-package.json
-gulpfile.js
-Gruntfile.js
-*.js.map
-
 ### Sass ###
 .sass-cache/
 *.css.map
-sass/
 
 ### SublimeText ###
 # cache files for sublime text
@@ -84,10 +74,6 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 
-
-### grunt ###
-# Grunt usually compiles files inside this directory
-dist/
 
 # Grunt usually preprocesses files such as coffeescript, compass... inside the .tmp directory
 .tmp/
