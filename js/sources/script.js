@@ -9561,6 +9561,12 @@ $(document).ready( function () {
   var ftYear = document.getElementById('year');
   ftYear.innerText = n;
 
+  // * Years Experience
+  var experienceStart = 2009;
+	var currentYear = d.getFullYear('Y');
+  var expYear = document.getElementById('yearsExperience');
+  expYear.innerText = currentYear - experienceStart;
+
   // * Smooth scroll
   $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();

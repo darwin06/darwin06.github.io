@@ -111,6 +111,10 @@
 		var year = new Date();
 		$('#year').html(year.getFullYear());
 
+		var experienceStart = 2009;
+		var currentYear = new Date(Y);
+		$('#yearsExperience').html( currentYear - experienceStart);
+
 	});
 
 });
