@@ -423,13 +423,21 @@ section {
     height: auto;
     max-width: 100%;
   }
-
-
 }
 
 // .about {
 
 // }
+
+.card-columns {
+  column-count: 3;
+  @include media-breakpoint-up(sm) {
+    column-count: 1;
+  }
+  @include media-breakpoint-up(md) {
+    column-count: 2;
+  }
+}
 
 .footer {
   background-color: $yankees-blue;
