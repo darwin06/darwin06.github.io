@@ -11492,7 +11492,7 @@ section:last-of-type .section:after {
   width: 1000%;
   height: 0;
   content: "";
-  border-width: 0px 0px 100px 2000px;
+  border-width: 0px 0px 100px 3000px;
   border-style: solid;
   border-color: transparent transparent transparent #0b132b;
 }
@@ -11552,18 +11552,51 @@ section:last-of-type .section:after {
   color: #fff;
 }
 
+.home .section {
+  padding-top: 0;
+}
+
 .home .section:before,
 .home .section:after {
   display: none;
 }
 
-.home .section__header {
-  background-image: url("images/mirador-uaymitun.jpg");
+.home .section.section__grid .section__header {
+  position: relative;
+  top: 0;
+  height: auto;
+}
+
+.home .container > .row > div {
+  gap: 2rem;
 }
 
 .home img {
   height: auto;
   max-width: 100%;
+}
+
+.home .thumbnail {
+  max-width: 210px;
+  border-radius: 50%;
+  position: relative;
+  padding: 8px;
+  overflow: hidden;
+}
+
+.home .thumbnail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  border: 8px solid transparent;
+  background: linear-gradient(45deg, #3a506b, #5bc0be) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
 }
 
 #portfolio .section {
